@@ -1,0 +1,72 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  background: hsl(213deg 32% 95%);
+  min-height: 100vh;
+  color: black;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: fit-content(40ch) 1fr;
+  width: min(100% - 2rem, 100%);
+  height: 100vh;
+  margin-inline: auto;
+  border: 1px solid black;
+}
+
+.profile {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background: white;
+  flex-direction: column;
+  padding: 2em 1.5rem;
+  border-radius: 5%;
+}
+
+.profile-img {
+  border-radius: 5%;
+  margin-bottom: 2rem;
+  order: -1;
+}
+
+.profile-name {
+  margin-bottom: 0.2em;
+}
+
+.profile-job {
+  margin-bottom: 2rem;
+}
+
+.profile-btn {
+  color: hsl(213deg 72% 60%);
+  border: hsl(213deg 72% 60%) solid 1px;
+  border-radius: 25px;
+  background: inherit;
+  font-size: 22px;
+  padding: 0.5em 2.5em;
+}
